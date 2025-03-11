@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/react.svg";
+import project2 from "../assets/react.svg";
+import project3 from "../assets/react.svg";
+import project4 from "../assets/react.svg";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in web development, problem-solving, and database management. With expertise in front-end technologies like React and Tailwind CSS, as well as back-end technologies like Node.js, Django, PostgreSQL, and MongoDB, I strive to build scalable and efficient applications that enhance user experience.`;
 
