@@ -28,14 +28,7 @@ export const EXPERIENCES = [
     company: "Nahdacpc & iSchool",
     description: `Taught programming concepts and problem-solving techniques to students. Conducted workshops on web development and competitive programming.`,
     technologies: ["C++", "JavaScript", "HTML", "CSS"],
-  },
-  {
-    year: "2023 - 2024",
-    role: "Operations Leader",
-    company: "ECPC, ACPC, ICPC",
-    description: `Managed and coordinated competitive programming events, ensuring smooth operations and effective communication between teams and organizers.`,
-    technologies: ["Event Management", "Leadership", "Problem-Solving"],
-  },
+  }
 ];
 
 export const PROJECTS = [

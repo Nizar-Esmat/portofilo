@@ -1,6 +1,11 @@
 import './App.css'
+import About from './compnents/About'
+import Contact from './compnents/Contact'
+import Experince from './compnents/Experince'
 import Hero from './compnents/Hero'
 import Navbar from './compnents/Navbar'
+import Projects from './compnents/Projects'
+import Technologies from './compnents/Technologies'
 
 function App() {
 
@@ -13,6 +18,11 @@ function App() {
       <div className='container mx-auto px-8'>
         <Navbar />
         <Hero />
+        <About/>
+        <Technologies/>
+        <Experince/>
+        <Projects/>
+        <Contact/>
       </div>
     </div>
   )
