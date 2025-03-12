@@ -35,6 +35,8 @@ export const PROJECTS = [
   {
     title: "Good-Reads Application",
     image: project1,
+    demo : "https://iti-project-good-reads-front.vercel.app/",
+    gitRepo:"https://github.com/Nizar-Esmat/Good-Reads-Application",
     description:
       "An online bookstore built using the MERN stack, featuring authentication, book reviews, and a user-friendly interface.",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
@@ -42,6 +44,8 @@ export const PROJECTS = [
   {
     title: "Real Estate Web App",
     image: project2,
+    demo : "https://iti-project-e-commerce.vercel.app/",
+    gitRepo:"https://github.com/Nizar-Esmat/Real_State",
     description:
       "A real estate platform for listing and searching properties, built with vanilla JavaScript and responsive design principles.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -49,6 +53,8 @@ export const PROJECTS = [
   {
     title: "Database Management System",
     image: project3,
+    demo : "",
+    gitRepo:"https://github.com/Nizar-Esmat/DBMS",
     description:
       "A simple DBMS built using Bash scripting, supporting table creation, data insertion, querying, and deletion.",
     technologies: ["Bash", "Linux"],
@@ -56,6 +62,8 @@ export const PROJECTS = [
   {
     title: "E-Commerce Platform",
     image: project4,
+    demo : "",
+    gitRepo:"",
     description:
       "A fully functional e-commerce website with product listings, a shopping cart, and user authentication.",
     technologies: ["React", "Node.js", "MongoDB"],

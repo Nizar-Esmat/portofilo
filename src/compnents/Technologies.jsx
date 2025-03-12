@@ -1,5 +1,20 @@
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiDjango, SiMongodb } from "react-icons/si";
+import { motion } from "framer-motion";
+
+// Floating Animation
+const iconVariants = (duration) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  }, 
+});
 
 export default function Technologies() {
   return (
@@ -12,18 +27,28 @@ export default function Technologies() {
         <div className="flex flex-wrap items-center justify-center gap-6">
           {/* Technology Cards */}
           {[
-            { name: "React", icon: <FaReact className="text-blue-400" /> },
-            { name: "Django", icon: <SiDjango className="text-green-500" /> },
-            { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
-            { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+            { name: "React", icon: <FaReact className="text-blue-400" />, duration: 2 },
+            { name: "Django", icon: <SiDjango className="text-green-500" />, duration: 2.5 },
+            { name: "Node.js", icon: <FaNodeJs className="text-green-600" />, duration: 3 },
+            { name: "MongoDB", icon: <SiMongodb className="text-green-400" />, duration: 3.5 },
           ].map((tech, index) => (
-            <div
+            <motion.div
+            variants={iconVariants(tech.duration)}
+                initial="initial"
+                animate="animate"
               key={index}
-              className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-6 shadow-lg transition-transform duration-300 hover:scale-105"
+              className="w-40 h-40 flex flex-col justify-center items-center rounded-2xl border-4 border-neutral-800 p-6 shadow-lg transition-transform duration-300 hover:scale-105"
             >
-              <div className="text-5xl">{tech.icon}</div>
+              <motion.div
+                variants={iconVariants(tech.duration)}
+                initial="initial"
+                animate="animate"
+                className="text-5xl"
+              >
+                {tech.icon}
+              </motion.div>
               <p className="mt-3 text-lg font-medium">{tech.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
