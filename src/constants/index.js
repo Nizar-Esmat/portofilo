@@ -60,14 +60,14 @@ export const PROJECTS = [
     technologies: ["Bash", "Linux"],
   },
   {
-    title: "E-Commerce Platform",
+    title: "ITI Social Media",
     image: project4,
-    demo : "",
-    gitRepo:"",
+    demo: "",
+    gitRepo: "https://github.com/nadaahmed2001/ITI_Social_Media_Website_Backend",
     description:
-      "A fully functional e-commerce website with product listings, a shopping cart, and user authentication.",
-    technologies: ["React", "Node.js", "MongoDB"],
-  },
+      "A social media platform for ITI students featuring friend requests, private chats, group discussions, live group messaging, and an AI chatbot for ITI-related questions.",
+    technologies: ["Django", "PostgreSQL", "WebSocket", "react", "Talwind CSS"],
+  }
 ];
 
 export const CONTACT = {
