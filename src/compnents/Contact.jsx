@@ -43,7 +43,7 @@ export default function Contact() {
           className="flex w-full max-w-xs items-center gap-4 rounded-lg border border-neutral-800 bg-neutral-900 p-4 shadow-lg transition-all hover:scale-105 sm:w-auto"
         >
           <FaEnvelope className="text-cyan-400 text-2xl" />
-          <p>{CONTACT.email}</p>
+          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
         </motion.div>
 
       </div>
