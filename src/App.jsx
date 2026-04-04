@@ -1,31 +1,44 @@
-import './App.css'
-import About from './compnents/About'
-import Contact from './compnents/Contact'
-import Experince from './compnents/Experince'
-import Hero from './compnents/Hero'
-import Navbar from './compnents/Navbar'
-import Projects from './compnents/Projects'
-import Technologies from './compnents/Technologies'
+import { useTheme } from './hooks/useTheme';
+import data from './data/portfolioData.json';
+
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+
+import HeroSection from './components/sections/HeroSection';
+import AboutSection from './components/sections/AboutSection';
+import ProfessionalImpactSection from './components/sections/ProfessionalImpactSection';
+import ExperienceSection from './components/sections/ExperienceSection';
+import SkillsSection from './components/sections/SkillsSection';
+import ProjectsSection from './components/sections/ProjectsSection';
+import ActivitiesSection from './components/sections/ActivitiesSection';
+import EducationSection from './components/sections/EducationSection';
+import CoursesSection from './components/sections/CoursesSection';
+import ContactSection from './components/sections/ContactSection';
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900 relative">
-      {/* Background Layer */}
-      <div className="fixed top-0 left-0 w-full h-full -z-10 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>    
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+      <Navbar profile={data.profile} theme={theme} toggleTheme={toggleTheme} />
 
-      {/* Main Content */}
-      <div className='container mx-auto px-8'>
-        <Navbar />
-        <Hero />
-        <About/>
-        <Technologies/>
-        <Experince/>
-        <Projects/>
-        <Contact/>
-      </div>
+      <main>
+        <HeroSection profile={data.profile} />
+        <AboutSection summary={data.summary} />
+        <ProfessionalImpactSection highlights={data.professionalHighlights} />
+        <ExperienceSection experience={data.experience} />
+        <SkillsSection skills={data.skills} />
+        <ProjectsSection projects={data.projects} />
+        <ActivitiesSection activities={data.activities} />
+        <EducationSection education={data.education} />
+        <CoursesSection courses={data.courses} />
+        <ContactSection profile={data.profile} />
+      </main>
+
+      <Footer profile={data.profile} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+

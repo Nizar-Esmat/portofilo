@@ -1,0 +1,344 @@
+{
+    "profile": {
+        "name": "Nizar Esmat Fawzy",
+        "title": "Software Engineer",
+        "location": "Cairo, Egypt",
+        "email": "nizaresmat2000@gmail.com",
+        "phone": "+20 109 258 9504",
+        "resumeUrl": "https://drive.google.com/file/d/1G71OIGmOPVpvbuo9hLZmK6cZg0rd_zBC/view?usp=sharing",
+        "tagline": "Full-stack engineer focused on scalable web apps, backend systems, and real-time experiences.",
+        "socials": [
+            {
+                "label": "LinkedIn",
+                "url": "https://linkedin.com/in/nizar-esmat-259690198"
+            },
+            {
+                "label": "GitHub",
+                "url": "https://github.com/Nizar-Esmat"
+            },
+            {
+                "label": "Codeforces",
+                "url": "https://codeforces.com/profile/nizaresmat2000"
+            }
+        ]
+    },
+    "summary": "Software Engineer and ITI graduate with hands-on experience in full-stack development, backend engineering, database design, and real-time applications. Proficient in building scalable web applications, RESTful APIs, and production-ready systems using JavaScript, Python, React, Node.js, NestJS, Django, PostgreSQL, and MongoDB. Strong foundation in data structures, algorithms, debugging, problem solving, and maintainable software architecture.",
+    "professionalHighlights": [
+        {
+            "title": "Mostaqbal Watan Platform",
+            "description": "Delivered a real-time chat system with private messaging, group communication, and admin controls.",
+            "stack": [
+                "React",
+                "NestJS",
+                "PostgreSQL",
+                "Real-Time Messaging"
+            ]
+        },
+        {
+            "title": "Events Management System",
+            "description": "Designed and enhanced workflows for event creation, coordination, user administration, and operations.",
+            "stack": [
+                "React",
+                "NestJS",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "title": "OnWay",
+            "description": "Contributed to a smart transportation platform focused on ride matching, coordination, and user experience improvements.",
+            "stack": [
+                "React",
+                "NestJS",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "title": "Al-Azhar Platform",
+            "description": "Expanded platform capabilities for online and offline classes, attendance tracking, exams, and student applications.",
+            "stack": [
+                "React",
+                "NestJS",
+                "PostgreSQL",
+                "Jitsi"
+            ]
+        },
+        {
+            "title": "Bingo Library Management",
+            "description": "Supported administration and management modules for a library management system.",
+            "stack": [
+                "React",
+                "NestJS",
+                "PostgreSQL"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Languages",
+            "items": [
+                "JavaScript",
+                "Python",
+                "C++",
+                "Java",
+                "SQL"
+            ]
+        },
+        {
+            "category": "Frameworks & Libraries",
+            "items": [
+                "React",
+                "Node.js",
+                "Express.js",
+                "NestJS",
+                "Django",
+                "Bootstrap",
+                "Socket.io"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "category": "Tools & Platforms",
+            "items": [
+                "Git",
+                "GitHub",
+                "Linux",
+                "Bash",
+                "Docker",
+                "CI/CD"
+            ]
+        },
+        {
+            "category": "Core Concepts",
+            "items": [
+                "Full-Stack Development",
+                "Backend Development",
+                "Frontend Development",
+                "REST APIs",
+                "Authentication",
+                "API Integration",
+                "Real-Time Applications",
+                "Database Design",
+                "Query Optimization",
+                "Data Modeling",
+                "Object-Oriented Programming",
+                "Data Structures",
+                "Algorithms",
+                "Debugging",
+                "Problem Solving"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "Opream",
+            "role": "Software Engineer",
+            "period": "May 2025 - Present",
+            "location": "Cairo, Egypt",
+            "stack": [
+                "React",
+                "NestJS",
+                "PostgreSQL"
+            ],
+            "highlights": [
+                "Engineered and maintained production-grade software across frontend, backend, and database layers.",
+                "Delivered a real-time chat system for the Mostaqbal Watan Platform.",
+                "Contributed to events management, smart transportation, education, online meeting integration, and library management modules."
+            ]
+        },
+        {
+            "company": "iSchool",
+            "role": "Software Instructor (Part-time)",
+            "period": "Apr 2024 - Nov 2024",
+            "location": "Cairo, Egypt",
+            "stack": [
+                "Programming Fundamentals",
+                "Problem Solving",
+                "Project-Based Learning"
+            ],
+            "highlights": [
+                "Delivered programming instruction through hands-on exercises and practical assignments.",
+                "Simplified software concepts including logic, control flow, functions, and problem decomposition."
+            ]
+        },
+        {
+            "company": "WE School",
+            "role": "Web Development Instructor",
+            "period": "Jul 2023 - Oct 2023",
+            "location": "Giza, Egypt",
+            "stack": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap"
+            ],
+            "highlights": [
+                "Mentored students in web development and responsive web application building.",
+                "Delivered training in frontend fundamentals with focus on maintainable structure."
+            ]
+        },
+        {
+            "company": "Information Technology Institute (ITI)",
+            "role": "Full Stack Developer Intern (Python)",
+            "period": "Nov 2024 - Mar 2025",
+            "location": "Smart Village, Egypt",
+            "stack": [
+                "Django",
+                "PostgreSQL",
+                "React"
+            ],
+            "highlights": [
+                "Designed a normalized PostgreSQL schema supporting 10k+ users.",
+                "Built RESTful APIs using Django and improved performance with indexing and query optimization.",
+                "Executed ETL-style workflows with Django ORM and contributed to end-to-end development."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Chat Application",
+            "type": "Personal",
+            "featured": true,
+            "stack": [
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Socket.io",
+                "Cloudinary"
+            ],
+            "description": "A real-time full-stack chat application with instant messaging, media sharing, and live communication features.",
+            "highlights": [
+                "Image, file, and voice-message uploads",
+                "Real-time messaging",
+                "Edit and delete functionality"
+            ],
+            "githubUrl": "https://github.com/Nizar-Esmat/NizarChat/tree/dev"
+        },
+        {
+            "title": "ITI Social Media Platform",
+            "type": "Team",
+            "featured": true,
+            "stack": [
+                "Django",
+                "PostgreSQL",
+                "React"
+            ],
+            "description": "A social platform for ITI students and graduates with profiles, posts, and interaction features.",
+            "highlights": [
+                "Backend API development",
+                "Database design",
+                "Frontend-backend integration"
+            ],
+            "githubUrl": "https://github.com/nadaahmed2001/ITI_Social_Media_Website_Backend"
+        },
+        {
+            "title": "Database Management System (CLI)",
+            "type": "Personal",
+            "featured": false,
+            "stack": [
+                "Bash"
+            ],
+            "description": "A command-line database management system that simulates core database operations using Bash scripting.",
+            "highlights": [
+                "CRUD operations",
+                "Backup and restore workflows",
+                "Query-like functionality"
+            ],
+            "githubUrl": "https://github.com/Nizar-Esmat/DBMS"
+        },
+        {
+            "title": "Good Reads Application",
+            "type": "Team",
+            "featured": true,
+            "stack": [
+                "MongoDB",
+                "Express",
+                "React",
+                "Node.js"
+            ],
+            "description": "A full-stack online bookstore with REST APIs, authentication, and dynamic frontend integration.",
+            "highlights": [
+                "Authentication",
+                "REST APIs",
+                "Backend business logic"
+            ],
+            "githubUrl": "https://github.com/Nizar-Esmat/Good-Reads-Application"
+        },
+        {
+            "title": "Real Estate Web App",
+            "type": "Team",
+            "featured": false,
+            "stack": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "description": "A responsive property listing web application with dynamic rendering using Vanilla JavaScript.",
+            "highlights": [
+                "Dynamic rendering",
+                "Responsive UI",
+                "Interactive components"
+            ],
+            "githubUrl": "https://github.com/Nizar-Esmat/Real_State"
+        }
+    ],
+    "activities": [
+        {
+            "title": "ECPC Operations Volunteer",
+            "organization": "Egyptian Collegiate Programming Contest",
+            "period": "2022 - 2024",
+            "description": "Supported contest operations and event coordination."
+        },
+        {
+            "title": "ACPC Operations Volunteer",
+            "organization": "Africa and Arab Collegiate Programming Contest",
+            "period": "2022 - 2024",
+            "description": "Contributed to operations and organization for competitive programming events."
+        },
+        {
+            "title": "ICPC Operations Volunteer",
+            "organization": "International Collegiate Programming Contest",
+            "period": "Mar 2024 - Apr 2024",
+            "description": "Participated in operations support during the contest period."
+        },
+        {
+            "title": "ECPC Contestant",
+            "organization": "Egyptian Collegiate Programming Contest",
+            "period": "2021 - 2022",
+            "description": "Achieved second place in qualification rounds."
+        }
+    ],
+    "education": [
+        {
+            "institution": "Nahda University",
+            "degree": "Bachelor of Computer Science",
+            "period": "Sep 2019 - Jul 2023",
+            "location": "Beni-Suef, Egypt",
+            "details": "Graduation Project: Smart Learning Management System with a Machine Learning model."
+        }
+    ],
+    "courses": [
+        {
+            "title": "Node.js - The Complete Guide",
+            "provider": "Udemy"
+        },
+        {
+            "title": "SQL and PostgreSQL - The Complete Developer's Guide",
+            "provider": "Udemy"
+        },
+        {
+            "title": "Full Stack Web Development (MERN)",
+            "provider": "Route Academy"
+        },
+        {
+            "title": "The Complete JavaScript Course",
+            "provider": "Udemy"
+        }
+    ]
+}
