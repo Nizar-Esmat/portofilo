@@ -4,6 +4,7 @@ import { HiArrowDownTray } from 'react-icons/hi2';
 import Button from '../ui/Button';
 import SocialLinks from '../ui/SocialLinks';
 import { scrollToSection } from '../../utils/helpers';
+import UniverseBackground from '../background/UniverseBackground';
 
 const item = delay => ({
   hidden: { opacity: 0, y: 24 },
@@ -19,16 +20,9 @@ const HeroSection = ({ profile }) => (
     id="hero"
     className="relative min-h-screen flex items-center justify-center overflow-hidden"
   >
-    {/* Background glow */}
-    <div
-      aria-hidden
-      className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
-    >
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-indigo-600/10 dark:bg-indigo-600/8 rounded-full blur-3xl" />
-      <div className="absolute top-1/3 -right-32 w-64 h-64 bg-purple-600/8 dark:bg-purple-600/6 rounded-full blur-2xl" />
-    </div>
+    <UniverseBackground />
 
-    <div className="pt-24 pb-20 px-4 text-center max-w-3xl mx-auto">
+    <div className="relative z-10 pt-24 pb-20 px-4 text-center max-w-3xl mx-auto">
       {/* Status indicator */}
       <motion.div
         variants={item(0)}
