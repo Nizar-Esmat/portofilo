@@ -286,6 +286,25 @@
                 "Interactive components"
             ],
             "githubUrl": "https://github.com/Nizar-Esmat/Real_State"
+        },
+        {
+            "title": "BudgetBuddy",
+            "type": "Personal",
+            "featured": true,
+            "stack": [
+                "React Native",
+                "Expo",
+                "TypeScript",
+                "SQLite"
+            ],
+            "description": "A fully offline personal expense tracker mobile app with monthly budget tracking, category breakdowns, and local SQLite storage — no login or internet required.",
+            "highlights": [
+                "Monthly salary vs. spent tracking",
+                "Add / edit / delete expenses with categories",
+                "Dark mode with custom green palette",
+                "100% local SQLite storage"
+            ],
+            "githubUrl": "https://github.com/Nizar-Esmat/home_expenses_app"
         }
     ],
     "activities": [
