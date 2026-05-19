@@ -87,6 +87,7 @@
             "category": "Frameworks & Libraries",
             "items": [
                 "React",
+                "Angular",
                 "Node.js",
                 "Express.js",
                 "NestJS",
