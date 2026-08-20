@@ -1,6 +1,9 @@
 import Container from '../layout/Container';
 import SectionTitle from '../ui/SectionTitle';
 import FadeIn from '../ui/FadeIn';
+import ParallaxBackdrop from '../ui/ParallaxBackdrop';
+import StaggerGroup from '../ui/StaggerGroup';
+import StaggerItem from '../ui/StaggerItem';
 import ExperienceCard from '../cards/ExperienceCard';
 
 const ExperienceSection = ({ experience }) => {
@@ -16,8 +19,9 @@ const ExperienceSection = ({ experience }) => {
   return (
     <section
       id="experience"
-      className="section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
     >
+      <ParallaxBackdrop />
       <Container>
         <FadeIn>
           <SectionTitle
@@ -30,11 +34,13 @@ const ExperienceSection = ({ experience }) => {
           {/* Vertical timeline line */}
           <div className="absolute left-1.5 top-3 bottom-0 w-px bg-gradient-to-b from-indigo-500 via-indigo-300 dark:via-indigo-700 to-transparent" />
 
-          {sorted.map((exp, i) => (
-            <FadeIn key={`${exp.company}-${i}`} delay={i * 0.1}>
-              <ExperienceCard experience={exp} />
-            </FadeIn>
-          ))}
+          <StaggerGroup staggerDelay={0.12}>
+            {sorted.map((exp, i) => (
+              <StaggerItem key={`${exp.company}-${i}`}>
+                <ExperienceCard experience={exp} />
+              </StaggerItem>
+            ))}
+          </StaggerGroup>
         </div>
       </Container>
     </section>

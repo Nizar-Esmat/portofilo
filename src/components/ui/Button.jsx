@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import { useMagnetic } from '../../hooks/useMagnetic';
+
 const Button = ({
   children,
   variant = 'primary',
@@ -10,6 +13,7 @@ const Button = ({
   className = '',
   ...rest
 }) => {
+  const magnetic = useMagnetic();
   const base =
     'inline-flex items-center justify-center gap-2 font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-slate-950';
 
@@ -32,23 +36,35 @@ const Button = ({
 
   if (href) {
     return (
-      <a
+      <motion.a
         href={href}
         target={target}
         rel={rel || (target === '_blank' ? 'noopener noreferrer' : undefined)}
         download={download}
         className={classes}
+        ref={magnetic.ref}
+        style={magnetic.style}
+        onMouseMove={magnetic.onMouseMove}
+        onMouseLeave={magnetic.onMouseLeave}
         {...rest}
       >
         {children}
-      </a>
+      </motion.a>
     );
   }
 
   return (
-    <button onClick={onClick} className={classes} {...rest}>
+    <motion.button
+      onClick={onClick}
+      className={classes}
+      ref={magnetic.ref}
+      style={magnetic.style}
+      onMouseMove={magnetic.onMouseMove}
+      onMouseLeave={magnetic.onMouseLeave}
+      {...rest}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 };
 

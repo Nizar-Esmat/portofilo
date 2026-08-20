@@ -18,7 +18,7 @@ const item = delay => ({
 const HeroSection = ({ profile }) => (
   <section
     id="hero"
-    className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    className="relative section-screen overflow-hidden"
   >
     <UniverseBackground />
 

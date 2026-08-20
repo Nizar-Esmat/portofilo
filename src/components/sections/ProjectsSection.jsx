@@ -2,6 +2,9 @@ import { useState } from 'react';
 import Container from '../layout/Container';
 import SectionTitle from '../ui/SectionTitle';
 import FadeIn from '../ui/FadeIn';
+import ParallaxBackdrop from '../ui/ParallaxBackdrop';
+import StaggerGroup from '../ui/StaggerGroup';
+import StaggerItem from '../ui/StaggerItem';
 import FilterTabs from '../ui/FilterTabs';
 import ProjectCard from '../cards/ProjectCard';
 
@@ -21,8 +24,9 @@ const ProjectsSection = ({ projects }) => {
   return (
     <section
       id="projects"
-      className="section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
     >
+      <ParallaxBackdrop />
       <Container>
         <FadeIn>
           <SectionTitle
@@ -38,13 +42,13 @@ const ProjectsSection = ({ projects }) => {
         </FadeIn>
 
         {filtered.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filtered.map((project, i) => (
-              <FadeIn key={project.title} delay={i * 0.08}>
+          <StaggerGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" staggerDelay={0.08}>
+            {filtered.map(project => (
+              <StaggerItem key={project.title}>
                 <ProjectCard project={project} />
-              </FadeIn>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerGroup>
         ) : (
           <p className="text-center text-slate-400 dark:text-slate-500 py-16 text-sm">
             No projects match this filter.

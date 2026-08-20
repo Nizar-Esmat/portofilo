@@ -1,6 +1,7 @@
 import Container from '../layout/Container';
 import SectionTitle from '../ui/SectionTitle';
 import FadeIn from '../ui/FadeIn';
+import ParallaxBackdrop from '../ui/ParallaxBackdrop';
 
 const AboutSection = ({ summary }) => {
   if (!summary) return null;
@@ -8,8 +9,9 @@ const AboutSection = ({ summary }) => {
   return (
     <section
       id="about"
-      className="section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
     >
+      <ParallaxBackdrop />
       <Container>
         <FadeIn>
           <SectionTitle title="About Me" />

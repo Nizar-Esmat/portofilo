@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollProgress from './components/ui/ScrollProgress';
 import ScrollToTop from './components/ui/ScrollToTop';
+import SectionNav from './components/ui/SectionNav';
 
 import HeroSection from './components/sections/HeroSection';
 import AboutSection from './components/sections/AboutSection';
@@ -24,6 +25,7 @@ function App() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
       <ScrollProgress />
       <Navbar profile={data.profile} theme={theme} toggleTheme={toggleTheme} />
+      <SectionNav />
 
       <main>
         <HeroSection profile={data.profile} />

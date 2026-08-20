@@ -1,7 +1,6 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 export default function Contact() {
   return (

@@ -2,6 +2,9 @@ import { useState } from 'react';
 import Container from '../layout/Container';
 import SectionTitle from '../ui/SectionTitle';
 import FadeIn from '../ui/FadeIn';
+import ParallaxBackdrop from '../ui/ParallaxBackdrop';
+import StaggerGroup from '../ui/StaggerGroup';
+import StaggerItem from '../ui/StaggerItem';
 import FilterTabs from '../ui/FilterTabs';
 import SkillCard from '../cards/SkillCard';
 
@@ -16,7 +19,8 @@ const SkillsSection = ({ skills }) => {
     active === ALL ? skills : skills.filter(s => s.category === active);
 
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-screen section-padding">
+      <ParallaxBackdrop />
       <Container>
         <FadeIn>
           <SectionTitle
@@ -31,22 +35,22 @@ const SkillsSection = ({ skills }) => {
           </div>
         </FadeIn>
 
-        <div className="space-y-10 max-w-4xl mx-auto">
-          {visible.map((group, gi) => (
-            <FadeIn key={group.category} delay={gi * 0.07}>
-              <div>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 pl-1">
-                  {group.category}
-                </h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {group.items.map(skill => (
-                    <SkillCard key={skill} skill={skill} />
-                  ))}
-                </div>
-              </div>
-            </FadeIn>
+        <StaggerGroup className="space-y-10 max-w-4xl mx-auto" staggerDelay={0.1}>
+          {visible.map(group => (
+            <StaggerItem key={group.category}>
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 pl-1">
+                {group.category}
+              </h3>
+              <StaggerGroup className="flex flex-wrap gap-2.5" staggerDelay={0.03}>
+                {group.items.map(skill => (
+                  <StaggerItem key={skill}>
+                    <SkillCard skill={skill} />
+                  </StaggerItem>
+                ))}
+              </StaggerGroup>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerGroup>
       </Container>
     </section>
   );

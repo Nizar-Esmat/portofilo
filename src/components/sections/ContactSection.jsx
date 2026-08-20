@@ -2,14 +2,16 @@ import { HiEnvelope, HiPhone, HiMapPin } from 'react-icons/hi2';
 import Container from '../layout/Container';
 import SectionTitle from '../ui/SectionTitle';
 import FadeIn from '../ui/FadeIn';
+import ParallaxBackdrop from '../ui/ParallaxBackdrop';
 import SocialLinks from '../ui/SocialLinks';
 import Button from '../ui/Button';
 
 const ContactSection = ({ profile }) => (
   <section
     id="contact"
-    className="section-padding bg-white/60 dark:bg-slate-900/40 border-t border-slate-100 dark:border-slate-800/60"
+    className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-t border-slate-100 dark:border-slate-800/60"
   >
+    <ParallaxBackdrop />
     <Container>
       <FadeIn>
         <SectionTitle

@@ -341,6 +341,13 @@
             "period": "Sep 2019 - Jul 2023",
             "location": "Beni-Suef, Egypt",
             "details": "Graduation Project: Smart Learning Management System with a Machine Learning model."
+        },
+        {
+            "institution": "Information Technology Institute (ITI)",
+            "degree": "Full Stack Python Web Development",
+            "period": "2024",
+            "location": "New Capital, Egypt",
+            "details": "4-month intensive professional training program focused on Full Stack Web Development using Python."
         }
     ],
     "courses": [

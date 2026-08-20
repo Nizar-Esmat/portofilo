@@ -37,6 +37,12 @@
     @apply py-20 lg:py-28;
   }
 
+  .section-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+    @apply relative flex items-center justify-center;
+  }
+
   .gradient-text {
     @apply bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent;
   }

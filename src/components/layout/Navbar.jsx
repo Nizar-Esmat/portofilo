@@ -8,6 +8,7 @@ import {
 } from 'react-icons/hi2';
 import Container from './Container';
 import { scrollToSection } from '../../utils/helpers';
+import { useActiveSection } from '../../hooks/useActiveSection';
 
 const NAV_LINKS = [
   { label: 'About', id: 'about' },
@@ -17,11 +18,12 @@ const NAV_LINKS = [
   { label: 'Projects', id: 'projects' },
   { label: 'Activities', id: 'activities' },
   { label: 'Education', id: 'education' },
+  { label: 'Courses', id: 'courses' },
   { label: 'Contact', id: 'contact' },
 ];
 
 const Navbar = ({ profile, theme, toggleTheme }) => {
-  const [activeSection, setActiveSection] = useState('hero');
+  const activeSection = useActiveSection(['hero', ...NAV_LINKS.map(l => l.id)]);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -29,26 +31,6 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const sectionIds = ['hero', ...NAV_LINKS.map(l => l.id)];
-    const observers = [];
-
-    sectionIds.forEach(id => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveSection(id);
-        },
-        { threshold: 0.25, rootMargin: '-64px 0px -50% 0px' }
-      );
-      obs.observe(el);
-      observers.push(obs);
-    });
-
-    return () => observers.forEach(obs => obs.disconnect());
   }, []);
 
   const handleNavClick = id => {
