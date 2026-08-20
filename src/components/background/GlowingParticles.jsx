@@ -48,7 +48,7 @@ export default function GlowingParticles({ count = 120, isDark = true, reducedMo
     <points ref={pointsRef} geometry={geometry}>
       <pointsMaterial
         size={0.1}
-        color={isDark ? '#a5b4fc' : '#6366f1'}
+        color={isDark ? '#d6d6d6' : '#575757'}
         transparent
         opacity={isDark ? 0.75 : 0.3}
         sizeAttenuation

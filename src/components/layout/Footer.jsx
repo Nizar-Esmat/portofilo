@@ -5,12 +5,12 @@ const Footer = ({ profile }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-slate-200 dark:border-slate-800 py-10">
+    <footer className="border-t border-ink-200 dark:border-ink-800 py-10">
       <Container>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 dark:text-slate-400 text-sm text-center sm:text-left">
+          <p className="text-ink-500 dark:text-ink-400 text-sm text-center sm:text-left">
             © {year}{' '}
-            <span className="font-medium text-slate-700 dark:text-slate-300">
+            <span className="font-medium text-ink-700 dark:text-ink-300">
               {profile.name}
             </span>
             . Built with React &amp; Tailwind CSS.

@@ -11,7 +11,7 @@ const EducationSection = ({ education }) => {
   return (
     <section
       id="education"
-      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-ink-900/40 border-y border-ink-100 dark:border-ink-800/60"
     >
       <ParallaxBackdrop />
       <Container>
@@ -25,17 +25,17 @@ const EducationSection = ({ education }) => {
               <TiltCard>
                 <div className="card-base card-hover p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/70 flex items-center justify-center">
-                      <HiAcademicCap className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-100 dark:bg-teal-950/70 flex items-center justify-center">
+                      <HiAcademicCap className="w-5 h-5 text-teal-600 dark:text-teal-400" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-base font-semibold text-slate-900 dark:text-white leading-snug">
+                      <h3 className="text-base font-semibold text-ink-900 dark:text-white leading-snug">
                         {edu.degree}
                       </h3>
-                      <p className="text-indigo-600 dark:text-indigo-400 font-medium text-sm mt-0.5">
+                      <p className="text-teal-600 dark:text-teal-400 font-medium text-sm mt-0.5">
                         {edu.institution}
                       </p>
-                      <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-2.5 text-xs text-slate-500 dark:text-slate-400">
+                      <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-2.5 text-xs text-ink-500 dark:text-ink-400">
                         <span className="flex items-center gap-1">
                           <HiCalendarDays className="w-3.5 h-3.5" />
                           {edu.period}
@@ -46,7 +46,7 @@ const EducationSection = ({ education }) => {
                         </span>
                       </div>
                       {edu.details && (
-                        <p className="mt-3 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        <p className="mt-3 text-sm text-ink-500 dark:text-ink-400 leading-relaxed">
                           {edu.details}
                         </p>
                       )}

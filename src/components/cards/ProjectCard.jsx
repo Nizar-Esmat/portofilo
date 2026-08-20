@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
                 {/* Header */}
                 <div className="flex items-start justify-between gap-3">
                     <div className="flex-1 min-w-0">
-                        <h3 className="text-base font-semibold text-slate-900 dark:text-white leading-snug mb-2">
+                        <h3 className="text-base font-semibold text-ink-900 dark:text-white leading-snug mb-2">
                             {title}
                         </h3>
                         <div className="flex flex-wrap items-center gap-1.5">
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`${title} on GitHub`}
-                                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
+                                className="p-1.5 rounded-lg text-ink-400 hover:text-ink-900 dark:hover:text-white hover:bg-ink-100 dark:hover:bg-ink-800 transition-all duration-200"
                             >
                                 <FaGithub className="w-4 h-4" />
                             </a>
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`${title} live demo`}
-                                className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
+                                className="p-1.5 rounded-lg text-ink-400 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition-all duration-200"
                             >
                                 <HiArrowTopRightOnSquare className="w-4 h-4" />
                             </a>
@@ -47,7 +47,7 @@ const ProjectCard = ({ project }) => {
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex-1">
+                <p className="text-sm text-ink-500 dark:text-ink-400 leading-relaxed flex-1">
                     {description}
                 </p>
 
@@ -57,9 +57,9 @@ const ProjectCard = ({ project }) => {
                         {highlights.map((h, i) => (
                             <li
                                 key={i}
-                                className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-300"
+                                className="flex items-start gap-2 text-sm text-ink-600 dark:text-ink-300"
                             >
-                                <span className="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-400 dark:bg-indigo-500" />
+                                <span className="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-teal-400 dark:bg-teal-500" />
                                 {h}
                             </li>
                         ))}
@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
                 )}
 
                 {/* Stack */}
-                <div className="flex flex-wrap gap-1.5 pt-1 border-t border-slate-100 dark:border-slate-800">
+                <div className="flex flex-wrap gap-1.5 pt-1 border-t border-ink-100 dark:border-ink-800">
                     {stack.map(tech => (
                         <Badge key={tech} variant="default">
                             {tech}

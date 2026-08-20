@@ -19,7 +19,7 @@ const ExperienceSection = ({ experience }) => {
   return (
     <section
       id="experience"
-      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-ink-900/40 border-y border-ink-100 dark:border-ink-800/60"
     >
       <ParallaxBackdrop />
       <Container>
@@ -32,7 +32,7 @@ const ExperienceSection = ({ experience }) => {
 
         <div className="relative max-w-3xl mx-auto">
           {/* Vertical timeline line */}
-          <div className="absolute left-1.5 top-3 bottom-0 w-px bg-gradient-to-b from-indigo-500 via-indigo-300 dark:via-indigo-700 to-transparent" />
+          <div className="absolute left-1.5 top-3 bottom-0 w-px bg-gradient-to-b from-teal-500 via-teal-300 dark:via-teal-700 to-transparent" />
 
           <StaggerGroup staggerDelay={0.12}>
             {sorted.map((exp, i) => (

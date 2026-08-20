@@ -11,24 +11,24 @@
   }
 
   body {
-    @apply bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased;
+    @apply bg-ink-50 dark:bg-ink-950 text-ink-900 dark:text-ink-100 antialiased;
   }
 
   ::selection {
-    @apply bg-indigo-200 dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100;
+    @apply bg-teal-200 dark:bg-teal-800 text-teal-900 dark:text-teal-100;
   }
 
   ::-webkit-scrollbar {
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    @apply bg-slate-100 dark:bg-slate-900;
+    @apply bg-ink-100 dark:bg-ink-900;
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-slate-300 dark:bg-slate-700 rounded-full;
+    @apply bg-ink-300 dark:bg-ink-700 rounded-full;
   }
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-indigo-400 dark:bg-indigo-600;
+    @apply bg-teal-400 dark:bg-teal-600;
   }
 }
 
@@ -44,14 +44,14 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-teal-600 to-sage-600 dark:from-teal-400 dark:to-sage-400 bg-clip-text text-transparent;
   }
 
   .card-base {
-    @apply bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl;
+    @apply bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl;
   }
 
   .card-hover {
-    @apply hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-lg hover:shadow-indigo-500/10 transition-all duration-300;
+    @apply hover:border-teal-300 dark:hover:border-teal-700 hover:shadow-lg hover:shadow-teal-500/10 transition-all duration-300;
   }
 }

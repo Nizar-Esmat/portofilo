@@ -42,7 +42,7 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || mobileOpen
-          ? 'bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 shadow-sm'
+          ? 'bg-white dark:bg-ink-950 border-b border-ink-200 dark:border-ink-800 shadow-sm'
           : 'bg-transparent'
       }`}
     >
@@ -65,8 +65,8 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
                 onClick={() => handleNavClick(link.id)}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                   activeSection === link.id
-                    ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
+                    ? 'text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-950/60'
+                    : 'text-ink-600 dark:text-ink-400 hover:text-ink-900 dark:hover:text-white hover:bg-ink-100 dark:hover:bg-ink-800'
                 }`}
               >
                 {link.label}
@@ -79,7 +79,7 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
             <button
               onClick={toggleTheme}
               aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
+              className="p-2 rounded-lg text-ink-500 dark:text-ink-400 hover:text-ink-900 dark:hover:text-white hover:bg-ink-100 dark:hover:bg-ink-800 transition-all duration-200"
             >
               {theme === 'dark' ? (
                 <HiSun className="w-5 h-5" />
@@ -92,7 +92,7 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
               href={profile.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+              className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-sm font-medium rounded-lg transition-colors duration-200"
             >
               <HiArrowDownTray className="w-4 h-4" />
               Resume
@@ -102,7 +102,7 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
               onClick={() => setMobileOpen(prev => !prev)}
               aria-label="Toggle navigation menu"
               aria-expanded={mobileOpen}
-              className="lg:hidden p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
+              className="lg:hidden p-2 rounded-lg text-ink-500 dark:text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 transition-all duration-200"
             >
               {mobileOpen ? (
                 <HiXMark className="w-5 h-5" />
@@ -115,15 +115,15 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="lg:hidden bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 pt-3 pb-4 space-y-0.5">
+          <div className="lg:hidden bg-white dark:bg-ink-950 border-t border-ink-200 dark:border-ink-800 pt-3 pb-4 space-y-0.5">
             {NAV_LINKS.map(link => (
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 className={`w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                   activeSection === link.id
-                    ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
+                    ? 'text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-950/60'
+                    : 'text-ink-600 dark:text-ink-400 hover:text-ink-900 dark:hover:text-white hover:bg-ink-100 dark:hover:bg-ink-800'
                 }`}
               >
                 {link.label}
@@ -134,7 +134,7 @@ const Navbar = ({ profile, theme, toggleTheme }) => {
                 href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+                className="flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
               >
                 <HiArrowDownTray className="w-4 h-4" />
                 Download Resume

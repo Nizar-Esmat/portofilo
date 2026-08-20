@@ -38,7 +38,7 @@ const SkillsSection = ({ skills }) => {
         <StaggerGroup className="space-y-10 max-w-4xl mx-auto" staggerDelay={0.1}>
           {visible.map(group => (
             <StaggerItem key={group.category}>
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 pl-1">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-ink-400 dark:text-ink-500 mb-4 pl-1">
                 {group.category}
               </h3>
               <StaggerGroup className="flex flex-wrap gap-2.5" staggerDelay={0.03}>

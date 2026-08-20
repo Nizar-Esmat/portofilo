@@ -24,7 +24,7 @@ const ProjectsSection = ({ projects }) => {
   return (
     <section
       id="projects"
-      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-ink-900/40 border-y border-ink-100 dark:border-ink-800/60"
     >
       <ParallaxBackdrop />
       <Container>
@@ -50,7 +50,7 @@ const ProjectsSection = ({ projects }) => {
             ))}
           </StaggerGroup>
         ) : (
-          <p className="text-center text-slate-400 dark:text-slate-500 py-16 text-sm">
+          <p className="text-center text-ink-400 dark:text-ink-500 py-16 text-sm">
             No projects match this filter.
           </p>
         )}

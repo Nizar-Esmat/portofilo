@@ -9,7 +9,7 @@ const AboutSection = ({ summary }) => {
   return (
     <section
       id="about"
-      className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/60"
+      className="section-screen section-padding bg-white/60 dark:bg-ink-900/40 border-y border-ink-100 dark:border-ink-800/60"
     >
       <ParallaxBackdrop />
       <Container>
@@ -18,7 +18,7 @@ const AboutSection = ({ summary }) => {
         </FadeIn>
         <FadeIn delay={0.15}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-base sm:text-lg leading-relaxed text-slate-600 dark:text-slate-300 text-center">
+            <p className="text-base sm:text-lg leading-relaxed text-ink-600 dark:text-ink-300 text-center">
               {summary}
             </p>
           </div>

@@ -28,9 +28,9 @@ const HeroSection = ({ profile }) => (
         variants={item(0)}
         initial="hidden"
         animate="show"
-        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 text-xs font-medium mb-8"
+        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-ink-100 dark:bg-ink-800 border border-ink-300 dark:border-ink-600 text-ink-900 dark:text-ink-100 text-xs font-medium mb-8"
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+        <span className="w-1.5 h-1.5 rounded-full bg-ink-900 dark:bg-white animate-pulse" />
         Open to opportunities
       </motion.div>
 
@@ -39,7 +39,7 @@ const HeroSection = ({ profile }) => (
         variants={item(0.1)}
         initial="hidden"
         animate="show"
-        className="text-5xl sm:text-6xl lg:text-7xl font-bold font-display text-slate-900 dark:text-white leading-[1.1] mb-5"
+        className="text-5xl sm:text-6xl lg:text-7xl font-bold font-display text-ink-900 dark:text-white leading-[1.1] mb-5"
       >
         {profile.name.split(' ').slice(0, 2).join(' ')}
         {' '}
@@ -53,7 +53,7 @@ const HeroSection = ({ profile }) => (
         variants={item(0.2)}
         initial="hidden"
         animate="show"
-        className="text-xl sm:text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4"
+        className="text-xl sm:text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-4"
       >
         {profile.title}
       </motion.p>
@@ -63,7 +63,7 @@ const HeroSection = ({ profile }) => (
         variants={item(0.3)}
         initial="hidden"
         animate="show"
-        className="text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed max-w-xl mx-auto mb-3"
+        className="text-base sm:text-lg text-ink-500 dark:text-ink-400 leading-relaxed max-w-xl mx-auto mb-3"
       >
         {profile.tagline}
       </motion.p>
@@ -73,7 +73,7 @@ const HeroSection = ({ profile }) => (
         variants={item(0.35)}
         initial="hidden"
         animate="show"
-        className="inline-flex items-center gap-1.5 text-sm text-slate-400 dark:text-slate-500 mb-10"
+        className="inline-flex items-center gap-1.5 text-sm text-ink-400 dark:text-ink-500 mb-10"
       >
         <HiMapPin className="w-4 h-4" />
         {profile.location}
@@ -122,7 +122,7 @@ const HeroSection = ({ profile }) => (
         transition={{ duration: 0.5, delay: 0.75 }}
         onClick={() => scrollToSection('about')}
         aria-label="Scroll to about section"
-        className="inline-flex flex-col items-center gap-1.5 text-slate-400 dark:text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+        className="inline-flex flex-col items-center gap-1.5 text-ink-400 dark:text-ink-500 hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-200"
       >
         <span className="text-xs font-medium tracking-widest uppercase">
           Scroll

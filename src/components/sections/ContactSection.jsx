@@ -9,7 +9,7 @@ import Button from '../ui/Button';
 const ContactSection = ({ profile }) => (
   <section
     id="contact"
-    className="section-screen section-padding bg-white/60 dark:bg-slate-900/40 border-t border-slate-100 dark:border-slate-800/60"
+    className="section-screen section-padding bg-white/60 dark:bg-ink-900/40 border-t border-ink-100 dark:border-ink-800/60"
   >
     <ParallaxBackdrop />
     <Container>
@@ -27,34 +27,34 @@ const ContactSection = ({ profile }) => (
             <div className="space-y-3.5">
               <a
                 href={`mailto:${profile.email}`}
-                className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200 text-sm group"
+                className="flex items-center gap-3 text-ink-600 dark:text-ink-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-200 text-sm group"
               >
-                <div className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-950/70 flex items-center justify-center transition-colors duration-200">
-                  <HiEnvelope className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200" />
+                <div className="w-8 h-8 rounded-lg bg-ink-100 dark:bg-ink-800 group-hover:bg-teal-100 dark:group-hover:bg-teal-950/70 flex items-center justify-center transition-colors duration-200">
+                  <HiEnvelope className="w-4 h-4 text-ink-400 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-200" />
                 </div>
                 {profile.email}
               </a>
 
               <a
                 href={`tel:${profile.phone}`}
-                className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200 text-sm group"
+                className="flex items-center gap-3 text-ink-600 dark:text-ink-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-200 text-sm group"
               >
-                <div className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-950/70 flex items-center justify-center transition-colors duration-200">
-                  <HiPhone className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200" />
+                <div className="w-8 h-8 rounded-lg bg-ink-100 dark:bg-ink-800 group-hover:bg-teal-100 dark:group-hover:bg-teal-950/70 flex items-center justify-center transition-colors duration-200">
+                  <HiPhone className="w-4 h-4 text-ink-400 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-200" />
                 </div>
                 {profile.phone}
               </a>
 
-              <p className="flex items-center gap-3 text-slate-500 dark:text-slate-400 text-sm">
-                <span className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-                  <HiMapPin className="w-4 h-4 text-slate-400" />
+              <p className="flex items-center gap-3 text-ink-500 dark:text-ink-400 text-sm">
+                <span className="w-8 h-8 rounded-lg bg-ink-100 dark:bg-ink-800 flex items-center justify-center">
+                  <HiMapPin className="w-4 h-4 text-ink-400" />
                 </span>
                 {profile.location}
               </p>
             </div>
 
             {/* Divider */}
-            <div className="border-t border-slate-100 dark:border-slate-800" />
+            <div className="border-t border-ink-100 dark:border-ink-800" />
 
             {/* Social links */}
             <div className="flex justify-center">

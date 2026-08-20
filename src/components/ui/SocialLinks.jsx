@@ -9,12 +9,6 @@ const ICON_MAP = {
   Codeforces: SiCodeforces,
 };
 
-const COLOR_MAP = {
-  LinkedIn: 'hover:text-blue-600 dark:hover:text-blue-400',
-  GitHub: 'hover:text-slate-900 dark:hover:text-white',
-  Codeforces: 'hover:text-red-500 dark:hover:text-red-400',
-};
-
 const SocialLink = ({ label, url, iconClass }) => {
   const magnetic = useMagnetic({ strength: 0.25, range: 40 });
   const Icon = ICON_MAP[label];
@@ -30,9 +24,7 @@ const SocialLink = ({ label, url, iconClass }) => {
       style={magnetic.style}
       onMouseMove={magnetic.onMouseMove}
       onMouseLeave={magnetic.onMouseLeave}
-      className={`text-slate-400 dark:text-slate-500 ${
-        COLOR_MAP[label] || 'hover:text-indigo-600 dark:hover:text-indigo-400'
-      } transition-colors duration-200`}
+      className="text-ink-400 dark:text-ink-500 hover:text-ink-900 dark:hover:text-white transition-colors duration-200"
     >
       <Icon className={iconClass} />
     </motion.a>

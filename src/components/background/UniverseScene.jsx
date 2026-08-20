@@ -45,7 +45,7 @@ export default function UniverseScene({ isDark, reducedMotion }) {
     <group ref={rootRef}>
       {/* Lighting — kept gentle so planets have shape without harsh shadows */}
       <ambientLight intensity={isDark ? 0.12 : 0.2} />
-      <pointLight position={[8, 6, 6]} intensity={1.2} color="#b4bcf5" />
+      <pointLight position={[8, 6, 6]} intensity={1.2} color="#ffffff" />
 
       {/* Stars only render in dark mode (invisible / distracting on a light bg) */}
       {isDark && <StarField />}
@@ -53,32 +53,32 @@ export default function UniverseScene({ isDark, reducedMotion }) {
       {/* Nebula-like glowing dust particles */}
       <GlowingParticles count={120} isDark={isDark} reducedMotion={reducedMotion} />
 
-      {/* Planet 1 — large, indigo, upper-left */}
+      {/* Planet 1 — large, light gray, upper-left */}
       <FloatingPlanet
         position={[-3.6, 1.1, -3]}
         radius={0.88}
-        color={isDark ? '#6366f1' : '#6366f1'}
-        emissive="#4338ca"
+        color={isDark ? '#d6d6d6' : '#d6d6d6'}
+        emissive="#3d3d3d"
         speed={0.22}
         reducedMotion={reducedMotion}
       />
 
-      {/* Planet 2 — medium, violet, lower-right */}
+      {/* Planet 2 — medium, mid gray, lower-right */}
       <FloatingPlanet
         position={[4.1, -1.7, -6]}
         radius={0.52}
-        color={isDark ? '#8b5cf6' : '#8b5cf6'}
-        emissive="#7c3aed"
+        color={isDark ? '#949494' : '#949494'}
+        emissive="#262626"
         speed={0.14}
         reducedMotion={reducedMotion}
       />
 
-      {/* Planet 3 — small, teal, far upper-right (deep z) */}
+      {/* Planet 3 — small, near-white, far upper-right (deep z) */}
       <FloatingPlanet
         position={[2.8, 2.4, -11]}
         radius={0.28}
-        color={isDark ? '#06b6d4' : '#06b6d4'}
-        emissive="#0891b2"
+        color={isDark ? '#ececec' : '#ececec'}
+        emissive="#575757"
         speed={0.09}
         reducedMotion={reducedMotion}
       />

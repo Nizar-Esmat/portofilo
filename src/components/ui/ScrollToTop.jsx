@@ -15,8 +15,8 @@ const ScrollToTop = () => {
     <button
       onClick={() => scrollToSection('hero')}
       aria-label="Scroll to top"
-      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white shadow-lg shadow-indigo-500/30 transition-all duration-300 ${
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
+      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white shadow-lg shadow-teal-500/30 transition-all duration-300 ${
+        visible ? 'opacity-100 tranink-y-0' : 'opacity-0 tranink-y-4 pointer-events-none'
       }`}
     >
       <HiArrowUp className="w-5 h-5" />

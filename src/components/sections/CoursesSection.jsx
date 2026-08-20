@@ -24,14 +24,14 @@ const CoursesSection = ({ courses }) => {
           {courses.map(course => (
             <StaggerItem key={course.title}>
               <div className="card-base card-hover p-5 flex items-start gap-3.5">
-                <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-indigo-100 dark:bg-indigo-950/70 flex items-center justify-center">
-                  <HiBookOpen className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+                <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-teal-100 dark:bg-teal-950/70 flex items-center justify-center">
+                  <HiBookOpen className="w-4 h-4 text-teal-600 dark:text-teal-400" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white leading-snug">
+                  <h3 className="text-sm font-semibold text-ink-900 dark:text-white leading-snug">
                     {course.title}
                   </h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  <p className="text-xs text-ink-500 dark:text-ink-400 mt-1">
                     {course.provider}
                   </p>
                 </div>

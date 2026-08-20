@@ -15,7 +15,7 @@ const ParallaxBackdrop = ({ className = '', range = 60 }) => {
     >
       <motion.div
         style={{ y: reducedMotion ? 0 : y }}
-        className="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[420px] bg-indigo-500/10 dark:bg-indigo-500/[0.06] rounded-full blur-3xl"
+        className="absolute -top-24 left-1/2 -tranink-x-1/2 w-[700px] h-[420px] bg-teal-500/10 dark:bg-teal-500/[0.06] rounded-full blur-3xl"
       />
     </div>
   );
