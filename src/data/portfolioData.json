@@ -202,6 +202,28 @@
     ],
     "projects": [
         {
+            "title": "ECPC Movement Control",
+            "type": "Personal",
+            "featured": true,
+            "stack": [
+                "NestJS",
+                "PostgreSQL",
+                "TypeORM",
+                "Socket.io",
+                "React",
+                "Zustand",
+                "Tailwind CSS"
+            ],
+            "description": "A real-time volunteer dispatch system for the Egyptian Collegiate Programming Contest, automatically matching contestant escort requests to available volunteers during live contest rounds.",
+            "highlights": [
+                "Automatic volunteer ranking by hall proximity, gender match, and idle-time fairness",
+                "Live dashboard for request status, volunteer availability, and load per hall",
+                "Concurrent dispatch safety via pessimistic DB locking",
+                "Append-only audit trail for every request state transition"
+            ],
+            "githubUrl": "https://github.com/Nizar-Esmat/ECPC-Movement-Control"
+        },
+        {
             "title": "Chat Application",
             "type": "Personal",
             "featured": true,
