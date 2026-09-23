@@ -13,9 +13,9 @@ import UniverseScene from './UniverseScene';
  *  - alpha: true          → transparent background, page bg-color shows through
  *  - antialias: false     → skip MSAA for lower GPU load (particles/blobs don't need it)
  *  - powerPreference      → hint to browser to prefer the integrated GPU
- *  - dpr [1, 1.5]         → cap device pixel ratio so retina screens don't run at 3×
+ *  - dpr [1, 1.5]         → cap device pixel ratio so retina screens don't run at 3× (flat 1 on mobile)
  */
-export default function UniverseCanvas({ isDark, reducedMotion }) {
+export default function UniverseCanvas({ isDark, reducedMotion, isMobile }) {
   return (
     <Canvas
       style={{ width: '100%', height: '100%' }}
@@ -25,10 +25,10 @@ export default function UniverseCanvas({ isDark, reducedMotion }) {
         alpha: true,
         powerPreference: 'low-power',
       }}
-      dpr={[1, 1.5]}
+      dpr={[1, isMobile ? 1 : 1.5]}
     >
       <Suspense fallback={null}>
-        <UniverseScene isDark={isDark} reducedMotion={reducedMotion} />
+        <UniverseScene isDark={isDark} reducedMotion={reducedMotion} isMobile={isMobile} />
       </Suspense>
     </Canvas>
   );

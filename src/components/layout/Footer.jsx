@@ -5,7 +5,7 @@ const Footer = ({ profile }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-ink-200 dark:border-ink-800 py-10">
+    <footer className="relative z-10 border-t border-ink-200 dark:border-ink-800 py-10">
       <Container>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-ink-500 dark:text-ink-400 text-sm text-center sm:text-left">

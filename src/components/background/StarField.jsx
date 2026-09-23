@@ -4,7 +4,6 @@ import { Color, AdditiveBlending, ShaderMaterial, Vector3, Spherical } from 'thr
 
 const RADIUS = 90;
 const DEPTH = 60;
-const COUNT = 2500;
 const FACTOR = 3;
 const SATURATION = 0;
 const SPEED = 0.4;
@@ -56,21 +55,21 @@ const genStar = (r) =>
   new Vector3().setFromSpherical(new Spherical(r, Math.acos(1 - Math.random() * 2), Math.random() * 2 * Math.PI));
 
 /** A deep-field star cloud. Forked from drei's Stars helper so star opacity is adjustable. */
-export default function StarField() {
+export default function StarField({ count = 2500 }) {
   const materialRef = useRef();
   const [material] = useState(() => new TransparentStarfieldMaterial());
 
   const { positions, colors, sizes } = useMemo(() => {
     const positions = [];
     const colors = [];
-    const sizes = Array.from({ length: COUNT }, () => (0.5 + 0.5 * Math.random()) * FACTOR);
+    const sizes = Array.from({ length: count }, () => (0.5 + 0.5 * Math.random()) * FACTOR);
     const color = new Color();
     let r = RADIUS + DEPTH;
-    const increment = DEPTH / COUNT;
-    for (let i = 0; i < COUNT; i++) {
+    const increment = DEPTH / count;
+    for (let i = 0; i < count; i++) {
       r -= increment * Math.random();
       positions.push(...genStar(r).toArray());
-      color.setHSL(i / COUNT, SATURATION, 0.9);
+      color.setHSL(i / count, SATURATION, 0.9);
       colors.push(color.r, color.g, color.b);
     }
     return {
@@ -78,7 +77,7 @@ export default function StarField() {
       colors: new Float32Array(colors),
       sizes: new Float32Array(sizes),
     };
-  }, []);
+  }, [count]);
 
   useFrame((state) => {
     if (materialRef.current) {

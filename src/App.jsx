@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 import ScrollProgress from './components/ui/ScrollProgress';
 import ScrollToTop from './components/ui/ScrollToTop';
 import SectionNav from './components/ui/SectionNav';
+import UniverseBackground from './components/background/UniverseBackground';
 
 import HeroSection from './components/sections/HeroSection';
 import AboutSection from './components/sections/AboutSection';
@@ -22,12 +23,13 @@ function App() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="min-h-screen bg-ink-50 dark:bg-ink-950 transition-colors duration-300">
+    <div className="min-h-screen transition-colors duration-300">
+      <UniverseBackground />
       <ScrollProgress />
       <Navbar profile={data.profile} theme={theme} toggleTheme={toggleTheme} />
       <SectionNav />
 
-      <main>
+      <main className="relative z-10">
         <HeroSection profile={data.profile} />
         <AboutSection summary={data.summary} />
         <ProfessionalImpactSection highlights={data.professionalHighlights} />
